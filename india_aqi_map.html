@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b788abaff775c05bc5ad0a7b4ac9a61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b788abaff775c05bc5ad0a7b4ac9a61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b788abaff775c05bc5ad0a7b4ac9a61 = L.map(
+                "map_9b788abaff775c05bc5ad0a7b4ac9a61",
+                {
+                    center: [21.0, 78.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0351813827f352537be150e8b5a66794 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0351813827f352537be150e8b5a66794.addTo(map_9b788abaff775c05bc5ad0a7b4ac9a61);
+        
+    
+            var marker_9ff5edf1279e5ca62b0da69b21e17585 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_9b788abaff775c05bc5ad0a7b4ac9a61);
+        
+    
+            var icon_be989939bae197ea3650409e5d1b6da6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ff5edf1279e5ca62b0da69b21e17585.setIcon(icon_be989939bae197ea3650409e5d1b6da6);
+        
+    
+        var popup_d90e9a7fb202233de95e62c75c3ecbca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77d3a7223e4d35eccf57a5ed6f457bc2 = $(`<div id="html_77d3a7223e4d35eccf57a5ed6f457bc2" style="width: 100.0%; height: 100.0%;">Delhi: AQI = 150</div>`)[0];
+                popup_d90e9a7fb202233de95e62c75c3ecbca.setContent(html_77d3a7223e4d35eccf57a5ed6f457bc2);
+            
+        
+
+        marker_9ff5edf1279e5ca62b0da69b21e17585.bindPopup(popup_d90e9a7fb202233de95e62c75c3ecbca)
+        ;
+
+        
+    
+    
+            var marker_a1350aab072d9e981134fdace9273cdf = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_9b788abaff775c05bc5ad0a7b4ac9a61);
+        
+    
+            var icon_0c677e701856fe90edc05e32da2cf80a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "yellow",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a1350aab072d9e981134fdace9273cdf.setIcon(icon_0c677e701856fe90edc05e32da2cf80a);
+        
+    
+        var popup_f4a9d1c679af43b8b6f5b74463183be5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da8066b9d3d2f4cb56ca573962caf2be = $(`<div id="html_da8066b9d3d2f4cb56ca573962caf2be" style="width: 100.0%; height: 100.0%;">Mumbai: AQI = 80</div>`)[0];
+                popup_f4a9d1c679af43b8b6f5b74463183be5.setContent(html_da8066b9d3d2f4cb56ca573962caf2be);
+            
+        
+
+        marker_a1350aab072d9e981134fdace9273cdf.bindPopup(popup_f4a9d1c679af43b8b6f5b74463183be5)
+        ;
+
+        
+    
+    
+            var marker_90ef3b411effa5c6dea5f8b62e5cc2a2 = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_9b788abaff775c05bc5ad0a7b4ac9a61);
+        
+    
+            var icon_495c4077fe691294e2241e070b66bf73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_90ef3b411effa5c6dea5f8b62e5cc2a2.setIcon(icon_495c4077fe691294e2241e070b66bf73);
+        
+    
+        var popup_665c566e3c3507e8e2747654572aaf43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8a80fc24fde894af866e9fd678452d6 = $(`<div id="html_c8a80fc24fde894af866e9fd678452d6" style="width: 100.0%; height: 100.0%;">Kolkata: AQI = 220</div>`)[0];
+                popup_665c566e3c3507e8e2747654572aaf43.setContent(html_c8a80fc24fde894af866e9fd678452d6);
+            
+        
+
+        marker_90ef3b411effa5c6dea5f8b62e5cc2a2.bindPopup(popup_665c566e3c3507e8e2747654572aaf43)
+        ;
+
+        
+    
+    
+            var feature_group_bb6a492e8236b602c45802ff73b2a06a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_c6f67b3bc52988f3ddced56fd791d8c4 = L.heatLayer(
+                [[28.6139, 77.209, 150], [19.076, 72.8777, 80], [22.5726, 88.3639, 220]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_c6f67b3bc52988f3ddced56fd791d8c4.addTo(feature_group_bb6a492e8236b602c45802ff73b2a06a);
+        
+    
+            feature_group_bb6a492e8236b602c45802ff73b2a06a.addTo(map_9b788abaff775c05bc5ad0a7b4ac9a61);
+        
+    
+            var layer_control_91d73f2732b560cb14086fd989864d91_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0351813827f352537be150e8b5a66794,
+                },
+                overlays :  {
+                    "AQI Heatmap" : feature_group_bb6a492e8236b602c45802ff73b2a06a,
+                },
+            };
+            let layer_control_91d73f2732b560cb14086fd989864d91 = L.control.layers(
+                layer_control_91d73f2732b560cb14086fd989864d91_layers.base_layers,
+                layer_control_91d73f2732b560cb14086fd989864d91_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_9b788abaff775c05bc5ad0a7b4ac9a61);
+
+        
+</script>
+</html>
