@@ -1,20 +1,22 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb 17 20:12:33 2025
-
-@author: Admin
-"""
-
+import streamlit as st
 import pandas as pd
+
+st.title("Air Pollution Data Analysis")
 
 # Load the data
 data = pd.read_csv('air_pollution_data.csv')
 
 # Display the first few rows
-print(data.head())
+st.subheader("First Few Rows of Data")
+st.write(data.head())
 
 # Get summary statistics
-print(data.describe())
+st.subheader("Summary Statistics")
+st.write(data.describe())
 
 # Check data types and missing values
-print(data.info())
+st.subheader("Data Information")
+buffer = []
+data.info(buf=buffer.append)
+info_str = "\n".join(buffer)
+st.text(info_str)
